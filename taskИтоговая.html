@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название сайта</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">Доктор<span>Айболит</span></a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Меню</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы 2</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Меню">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">С заботой о ваших питомцах</h1>
+                <p class="hero__subtitle">Здесь всё о здоровье животных</p>
+                <div class="hero__buttons">
+                    <a href="#menu" class="btn btn--primary">Виды ветеринарных услуг</a>
+                    <a href="#contacts" class="btn btn--outline">Диагностика заболеваний и лечение Вашего питомца здесь</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__image">
+                        <img src="images/Эта фотка лучше.webp" alt="">
+                    </div>
+                    <div class="about__content">
+                        <h2 class="section-title">Мы найдем причину и вылечим</h2>
+                        <p class="about__text"> За 30 лет работы наша клиника зарекомендовала себя одной из лучших в России.</p>
+                        <p class="about__text">Все наши специалисты имеют высшее ветеринарное образование и неоднократно проходили стажировки за рубежом</p>
+                        <ul class="about__features">
+                            <li class="feature-item">
+                                <span></span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fa-sharp fa-regular fa-thumbs-up"></i> &#160 
+                                <span> Проведем необходимые обследования на современном оборудовании.</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fa-sharp fa-regular fa-thumbs-up"></i> &#160 
+                                <span> Делаем все ветеринарные процедуры  и операции</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fa-sharp fa-regular fa-thumbs-up"></i> &#160 
+                                <span>Спасаем жизни животных в экстренных ситуациях</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Услуги</h2>
+                <div class="menu__content active" id="coffee">
+                    <div class="menu__grid">
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Осмотр ветеринаром</h3>
+                                <span class="menu-item__price">500 руб.</span>
+                            </div>
+                            <p class="menu-item__description">У нас работают дипломированные специалисты с большим стажем работы.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Лабораторная и инструментальная диагностика</h3>
+                                <span class="menu-item__price">от 400 до 3000 руб.</span>
+                            </div>
+                            <p class="menu-item__description">Новое оборудование , позволяющее быстро и качественно проводить весь спектр анализов крови. Современное УЗИ- и рентгеноборудование.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Стационарное лечение</h3>
+                                <span class="menu-item__price"> от 2 до 5 тыс. руб. за сутки</span>
+                            </div>
+                            <p class="menu-item__description">При необходимости проведения иненсивного лечения или длительной фиксации животное  может быть определено на стационарное лечение с питанием  и уходом. Стоимость содержания зависит от вида животного.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Выезд ветеринара на дом</h3>
+                                <span class="menu-item__price">1000 руб.</span>
+                            </div>
+                            <p class="menu-item__description">Своя скорая ветеринарная помощь. Работаем 24/7. Машина укомплектована необходимым ветеринарным и диагностическим оборудованием.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Ветеринарная аптека</h3>
+                                <span class="menu-item__price">Цены адекватные</span>
+                            </div>
+                            <p class="menu-item__description">Строгий контроль за сроками годности препаратов. Наши специалисты помогут подобрать для Вашего питомца наиболее эффективные лекарства. Мы боремся за каждого клиента, поэтому нам важен результат.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Операции</h3>
+                                <span class="menu-item__price"> Цена по отдельному прейскуранту</span>
+                            </div>
+                            <p class="menu-item__description"> Операции проводятся квалифицированной бригадой с применением лучшего европейского оборудования.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы</h2>
+                <div class="reviews__slider">
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Собаку на охоте пропорол кабан. Провели операцию. Байкал полностью здоров. Рекомендую клинику.</p>
+                        <div class="review__author">
+                            <img src="images/Антон.webp" alt=""
+                                class="review__photo">
+                            <span class="review__name">Антон</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Снимки на дисплазию суставов этой клиники принимают в РКФ.</p>
+                        <div class="review__author">
+                            <img src="images/Виктор.jpg" alt=""
+                                class="review__photo">
+                            <span class="review__name">Виктор</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__info">
+                        <h2 class="section-title">Контакты</h2>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>150055,г.Ярославль, <br>ул. Победы, д.35</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>телефон: 8-920-104-63-63</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>электронная почта: zarejem@cmail.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <span>часы работы: 8-17, <br>без выходных</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="https://t.me/JoniWeis" class="social-link"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2135.911628368454!2d39.868703776443404!3d57.632988773837695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b291640518a369%3A0x6259c72721cb312!2z0YPQuy4g0J_QvtCx0LXQtNGLLCAzNSwg0K_RgNC-0YHQu9Cw0LLQu9GMLCDQr9GA0L7RgdC70LDQstGB0LrQsNGPINC-0LHQuy4sIDE1MDA1NQ!5e0!3m2!1sru!2sru!4v1752342759039!5m2!1sru!2sru"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a href="#" class="logo">Доктор<span>Айболит</span></a>
+                    <p class="footer__text">С заботой о ваших питомцах</p>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Навигация</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Главная</a></li>
+                        <li><a href="#menu" class="footer__link">Меню</a></li>
+                        <li><a href="#about" class="footer__link">О нас</a></li>
+                        <li><a href="#reviews" class="footer__link">Отзывы</a></li>
+                        <li><a href="#contacts" class="footer__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <h3 class="footer__title">Подписка</h3>
+                    <p class="footer__text">Подпишитесь на наши новости и акции</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" class="subscribe-input">
+                        <button type="submit" class="subscribe-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Copyright 2025. <br>Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
